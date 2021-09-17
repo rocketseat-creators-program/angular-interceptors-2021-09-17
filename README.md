@@ -10,11 +10,13 @@ Iremos abordar nesta aula assuntos muito recorrentes no dia a dia de um desenvol
 - NodeJS versão LTS v14.17.6 (LTS recomendada / mínima compatível v10.13)
 - Angular CLI (versão atual: 12) `npm i -g @angular/cli`
 
+
 ## Como rodar o projeto localmente
 
 - Clonar o projeto: `git clone https://github.com/rocketseat-experts-club/angular-interceptors-2021-09-17`
-- Em um novo terminal, rodar a api: `npm run api` - Acesse em: [http://localhost:3000](http://localhost:3000)
-- Dentro da pasta angular-interceptors, rodar o app: `npm run start` - Acesse em: [http://localhost:4200](http://localhost:4200)
+- Dentro da pasta do projeto, instalar as dependências: `npm install`
+- Rodar a api: `npm run api` - Acesse em: [http://localhost:3000](http://localhost:3000)
+- Em um novo terminal, rodar o app: `npm run start` - Acesse em: [http://localhost:4200](http://localhost:4200)
 
 
 ## Bibliotecas (libs) utilizadas
