@@ -1,0 +1,27 @@
+<mat-card class="card">
+  <form (submit)="register($event)" [formGroup]="registerForm">
+    <mat-form-field class="full-width" appearance="outline">
+      <mat-label>Email</mat-label>
+      <input type="email" matInput formControlName="email" />
+    </mat-form-field>
+
+    <mat-form-field class="full-width" appearance="outline">
+      <mat-label>Password</mat-label>
+      <input type="password" matInput formControlName="password" />
+    </mat-form-field>
+
+    <mat-form-field class="full-width" appearance="outline">
+      <mat-label>Firstname</mat-label>
+      <input matInput formControlName="firstname" />
+    </mat-form-field>
+
+    <mat-form-field class="full-width" appearance="outline">
+      <mat-label>Age</mat-label>
+      <input type="number" matInput formControlName="age" />
+    </mat-form-field>
+
+    <div class="full-width">
+      <button class="full-width" mat-raised-button color="primary" type="submit" [disabled]="!registerForm.valid">Cadastrar</button>
+    </div>
+  </form>
+</mat-card>

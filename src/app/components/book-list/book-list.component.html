@@ -1,0 +1,8 @@
+<mat-list role="list">
+  <mat-list-item role="listitem" *ngFor="let book of books">
+    <span>{{ book.title }} ({{ book.author }})</span>
+    <span class="spacer"></span>
+    <mat-icon (click)="edit.emit(book)">edit</mat-icon>
+    <mat-icon (click)="delete.emit(book)">delete</mat-icon>
+  </mat-list-item>
+</mat-list>

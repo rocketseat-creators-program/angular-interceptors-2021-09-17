@@ -1,4 +1,29 @@
 /* You can add global styles to this file, and also import other style files */
+html, body { 
+  height: 100%; 
+}
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+body { 
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif; 
+  background-color: #e7e0f3;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.spacer {
+  flex: 1;
+}
+
+.card {
+  width: 90%;
+  margin: 30px auto;
+}
+

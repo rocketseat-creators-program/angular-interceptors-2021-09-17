@@ -1,0 +1,8 @@
+<mat-toolbar color="primary">
+  <span>Interceptor Examples</span>
+  <span class="spacer"></span>
+  <button mat-icon-button routerLink="/login" *ngIf="!currentUserFirstname">Login</button>
+  <button mat-icon-button routerLink="/register" *ngIf="!currentUserFirstname">Register</button>
+  <button mat-icon-button (click)="logout()" *ngIf="currentUserFirstname">Logout</button>
+  <button mat-icon-button *ngIf="currentUserFirstname">Olá, {{ currentUserFirstname }}!</button>
+</mat-toolbar>

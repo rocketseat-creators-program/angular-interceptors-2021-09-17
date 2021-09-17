@@ -1,0 +1,21 @@
+<mat-card class="card">
+  <form (submit)="save($event)" [formGroup]="bookForm">
+    <mat-form-field class="full-width" appearance="outline">
+      <mat-label>Title</mat-label>
+      <input matInput formControlName="title" />
+    </mat-form-field>
+
+    <mat-form-field class="full-width" appearance="outline">
+      <mat-label>Author</mat-label>
+      <input matInput formControlName="author" />
+    </mat-form-field>
+
+    <div class="full-width">
+      <button class="full-width" mat-raised-button color="primary" type="submit">{{ bookForm.value.id ? 'Update' : 'Create' }}</button>
+    </div>
+  </form>
+</mat-card>
+
+<mat-card class="card">
+  <app-book-list [books]="books" (edit)="select($event)" (delete)="delete($event)"></app-book-list>
+</mat-card>

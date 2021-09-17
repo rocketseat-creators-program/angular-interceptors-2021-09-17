@@ -1,0 +1,17 @@
+<mat-card class="card">
+  <form (submit)="login($event)" [formGroup]="loginForm">
+    <mat-form-field class="full-width" appearance="outline">
+      <mat-label>Email</mat-label>
+      <input type="email" matInput formControlName="email" />
+    </mat-form-field>
+
+    <mat-form-field class="full-width" appearance="outline">
+      <mat-label>Password</mat-label>
+      <input type="password" matInput formControlName="password" />
+    </mat-form-field>
+
+    <div class="full-width">
+      <button class="full-width" mat-raised-button color="primary" type="submit" [disabled]="!loginForm.valid">Login</button>
+    </div>
+  </form>
+</mat-card>
