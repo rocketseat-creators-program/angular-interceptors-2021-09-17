@@ -5,11 +5,6 @@
       "title": "Clean Code: A Handbook of Agile Software Craftsmanship",
       "author": "Robert C. Martin",
       "id": 1
-    },    
-    {
-      "title": "Clean Architecture: A Craftsman's Guide to Software Structure and Design",
-      "author": "Robert C. Martin",
-      "id": 2
     }
   ]
 }
