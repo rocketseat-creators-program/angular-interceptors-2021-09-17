@@ -1,27 +1,53 @@
-# AngularInterceptors
+<img src="https://storage.googleapis.com/golden-wind/experts-club/capa-github.svg" />
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.5.
+# Utilizando Angular HTTP Interceptors
 
-## Development server
+Iremos abordar nesta aula assuntos muito recorrentes no dia a dia de um desenvolvedor front-end, como lidar com headers e tokens de autenticação para chamadas a endpoints privados das APIs, componentes de loading global da aplicação e emissão de alertas baseado no tipo de erro recebido da API. 
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+**O que todos estes assuntos tem em comum?** Estão relacionados a serviços que utilizam chamadas para APIs externas, porém ao trazer esta responsabilidade aos serviços que utilizam o HttpClient acabamos acumulando responsabilidades aos mesmos, e gerando muita repetição de código, o que acaba prejudicando a manutenção e escalabilidade
 
-## Code scaffolding
+## Configuração Inicial Mínima (Requisitos)
+- NodeJS versão LTS v14.17.6 (LTS recomendada / mínima compatível v10.13)
+- Angular CLI (versão atual: 12) `npm i -g @angular/cli`
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Como rodar o projeto localmente
 
-## Build
+- Clonar o projeto: `git clone https://github.com/rocketseat-experts-club/angular-interceptors-2021-09-17`
+- Em um novo terminal, rodar a api: `npm run api` - Acesse em: [http://localhost:3000](http://localhost:3000)
+- Dentro da pasta angular-interceptors, rodar o app: `npm run start` - Acesse em: [http://localhost:4200](http://localhost:4200)
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-## Running unit tests
+## Bibliotecas (libs) utilizadas
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### Angular material (UI)
 
-## Running end-to-end tests
+Para agilizar e focarmos na implementação das funcionalidades principais, já vamos iniciar a aula utilizando uma estrutura inicial de componentes importados do Angular Material (button, card, dialog, icon, input, list, toolbar e progress spinner) o projeto com algum conteúdo inicial (páginas, componentes, serviços)
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+Link para documentação: [Angular Material Components](https://material.angular.io/components)
 
-## Further help
+### Json Server Auth
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Uma forma bem simples de simular uma api com endpoints para recursos e suas operações básicas (CRUD - Create, Read, Update and Delete), e também para simular endpoints de autenticação e tornar recursos privados.
+
+`POST /register` | `POST /login`
+
+`GET /books` | `GET /books/:id` | `POST /books` | `PUT /books/:id` | `DELETE /books/:id`
+
+Link para documentação: [Json Server Auth](https://www.npmjs.com/package/json-server-auth)
+
+## Casos de Uso
+
+- [ ] Header Manipulation
+- [ ] Loader
+- [ ] Alert (Error Handler)
+
+## Links Adicionais
+
+- Angular Reactive Forms: [Link](https://angular.io/guide/reactive-forms)
+- RxJS Operators (tap, delay, catchError, finalize): [Link](https://rxjs.dev/api/operators)
+
+## Expert Creator
+
+| [<img src="https://avatars.githubusercontent.com/u/35535982?v=4" width="75px;"/>](https://github.com/rpaivabr) |
+| :-: |
+|[Rafael Paiva](https://github.com/rpaivabr)|
