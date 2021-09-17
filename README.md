@@ -6,6 +6,8 @@ Iremos abordar nesta aula assuntos muito recorrentes no dia a dia de um desenvol
 
 **O que todos estes assuntos tem em comum?** Estão relacionados a serviços que utilizam chamadas para APIs externas, porém ao trazer esta responsabilidade aos serviços que utilizam o HttpClient acabamos acumulando responsabilidades aos mesmos, e gerando muita repetição de código, o que acaba prejudicando a manutenção e escalabilidade
 
+Link para documentação: [Angular HttpInterceptor](https://angular.io/api/common/http/HttpInterceptor)
+
 ## Configuração Inicial Mínima (Requisitos)
 - NodeJS versão LTS v14.17.6 (LTS recomendada / mínima compatível v10.13)
 - Angular CLI (versão atual: 12) `npm i -g @angular/cli`

@@ -16,7 +16,7 @@ export class AlertService {
 
   constructor(private dialog: MatDialog) { }
 
-  showError(dialogData: DialogData, isLoginUrl: boolean): Observable<any> {
+  showError(dialogData: DialogData): Observable<any> {
     const dialogRef = this.dialog.open(DialogComponent, { 
       data: dialogData,
       disableClose: true
